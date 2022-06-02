@@ -10,7 +10,8 @@
 `avm-fritzbox-base32` library povides base32 encode/decode functions, which are
 used for decoding exported data from avm fritzbox.
 
-Current limitations:
+## Limitations
+
 * different alphabet (`ABCDEFGHIJKLMNOPQRSTUVWXYZ123456`)
 * padding not supported (usually base encodings use `=` for padding)
 * encoding input data must be aligned to 5 bytes
