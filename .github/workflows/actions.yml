@@ -1,0 +1,32 @@
+name: GitHub Actions
+
+on:
+  push:
+    branches:
+      - main
+      - dev
+  #pull_request:
+    #branches:
+    # - main
+    # - dev
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      # continue other builds if one fails
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest]
+        #os: [ubuntu-latest, macos-latest, windows-latest]
+        #rust: [stable, beta, nightly]
+        #
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: cargo build --verbose
+
+      - name: Run tests
+        run: cargo test --verbose
+
