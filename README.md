@@ -1,6 +1,6 @@
 # AVM Fritzbox Base32
 
-[![Build Status](https://github.com/AntonGepting/avm-fritzbox-base32-rs/actions/workflows/actions.yml/badge.svg)](https://github.com/AntonGepting/tmux-interface-rs/actions)
+[![Build Status](https://github.com/AntonGepting/avm-fritzbox-base32-rs/actions/workflows/actions.yml/badge.svg)](https://github.com/AntonGepting/avm-fritzbox-base32-rs/actions)
 [![Crates.io](https://img.shields.io/crates/v/avm-fritzbox-base32.svg)](https://crates.io/crates/avm_fritzbox-base32)
 [![Documentation](https://docs.rs/avm_fritzbox-base32/badge.svg)](https://docs.rs/avm_fritzbox-base32)
 
