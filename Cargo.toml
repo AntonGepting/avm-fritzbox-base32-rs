@@ -1,0 +1,17 @@
+[package]
+name = "avm-fritzbox-base32"
+version = "0.1.0"
+edition = "2021"
+authors = ["Anton Gepting <anton.gepting@gmail.com>"]
+license = "MIT"
+description = "Rust language implementation of AVM Fritzbox Base32 encoding"
+readme = "README.md"
+keywords = ["avm", "fritzbox", "base32"]
+categories = ["Encoding"]
+repository = "https://github.com/AntonGepting/avm-fritzbox-base32-rs"
+include = ["/src/**/*", "/Cargo.toml", "/README.md", "/LICENSE.md"]
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
