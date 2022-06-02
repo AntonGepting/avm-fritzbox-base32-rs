@@ -51,7 +51,7 @@ pub fn encode(input: &[u8]) -> Option<String> {
         }
 
         // 5 bytes into 8 chars
-        s = s + &encode_5_bytes(&buf)?;
+        s += &encode_5_bytes(&buf)?;
     }
 
     Some(s)
