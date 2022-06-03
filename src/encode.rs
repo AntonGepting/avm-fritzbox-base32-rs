@@ -4,7 +4,7 @@ fn bit_quintet_to_char(d: u8) -> Option<char> {
     ALPHABET.chars().nth(d as usize)
 }
 
-// TODO: explanaition
+// TODO: explanation
 fn encode_5_bytes(buf: &[u8; 5]) -> Option<String> {
     let mut s = String::new();
     // example:
@@ -44,8 +44,12 @@ fn encode_5_bytes(buf: &[u8; 5]) -> Option<String> {
 pub fn encode(input: &[u8]) -> Option<String> {
     let mut s = String::new();
 
+    // split binary data into 5 bytes chunks
     for chunk in input.chunks(5) {
         let mut buf = [0u8; 5];
+
+        // copy chunk bytes into buffer of 5 bytes (for last chunk, aligned with nulls)
+        // XXX: optimize?
         for (i, &b) in chunk.iter().enumerate() {
             buf[i] = b
         }
